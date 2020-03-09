@@ -17,42 +17,42 @@
 
 ###### creating excel sheets
 
-    Because an excel workbook is esentially a collection of sheet, we adopt the same concept here
-    we will require a list (collection)  of sheets.
+>>Because an excel workbook is esentially a collection of sheet, we adopt the same concept here
+>>we will require a list (collection)  of sheets.
 
-    >>>  ExcelReports report = new ExcelReports();                  // Instatiate a Workbook
-    >>>  List<WorkSheet> workbook = new List<WorkSheet>();          // Instatatiate sheet list
+      ExcelReports report = new ExcelReports();                  // Instatiate a Workbook
+      List<WorkSheet> workbook = new List<WorkSheet>();          // Instatatiate sheet list
 
-    Defining a single worksheet properties.
+>>Defining a single worksheet properties.
 
-    >>>  WorkSheet sheet = new WorkSheet{
-    >>>>    Type = "report",                                         // Keep this as is for future use. when adding other report types.
-    >>>>    Title = "Add title of your report here",                 // Replace with your report title
-    >>>>    Author = "Your name or organisation's name",             // Replace with your or your organisation's name
-    >>>>    SheetName = "Name of sheet tab",                         // Sheet tab name
-    >>>>    SheetData = allDevices,                                  // SQL quiry data/object
-    >>>>    Headers = null,                                          // Refer to Headers section** (optional).
-    >>>>    Description = "Report/sheet description",                // Replace with your report description
-    >>> };
-    >>> workbook.Add(sheet);
+      WorkSheet sheet = new WorkSheet{
+        Type = "report",                                         // Keep this as is for future use. when adding other report types.
+        Title = "Add title of your report here",                 // Replace with your report title
+        Author = "Your name or organisation's name",             // Replace with your or your organisation's name
+        SheetName = "Name of sheet tab",                         // Sheet tab name
+        SheetData = allDevices,                                  // SQL quiry data/object
+        Headers = null,                                          // Refer to Headers section** (optional).
+        Description = "Report/sheet description",                // Replace with your report description
+     };
+     workbook.Add(sheet);
 
 ###### ** sheet.Headers
 
-    >>> Headers property is of type List<sheetHeaders> , where sheetHeaders is of type (string, string)
-    >>> sheetHeaders - (column_Key, replacement_name) 
-    >>>>> "column_key" is the keyname/ table column name from your data set or sql quiry
-    >>>>> "replacement_name" is the new text value to replace the column_key
+>>> Headers property is of type List<sheetHeaders> , where sheetHeaders is of type (string, string)
+>>> sheetHeaders - (column_Key, replacement_name) 
+>>>>> "column_key" is the keyname/ table column name from your data set or sql quiry
+>>>>> "replacement_name" is the new text value to replace the column_key
 
-    >>> Creating Headers
-    >>>>>> - Replacing two column name with custom,readable and "report friendly" names
+>>> Creating Headers
+>>>     - Replacing two column name with custom,readable and "report friendly" names
 
-    >>>>> List<sheetHeaders> headers = new List<sheetHeaders>();            
-    >>>>> headers.Add(new sheetHeaders("CustName", "Customer Name"));       // Original text "CustName" will be replaced with "Customer Name"
-    >>>>> headers.Add(new sheetHeaders("CustID", "Account Reference No.")); // Original text "CustID" will be replaced with "Account Reference No."
+     List<sheetHeaders> headers = new List<sheetHeaders>();            
+     headers.Add(new sheetHeaders("CustName", "Customer Name"));       // Original text "CustName" will be replaced with "Customer Name"
+     headers.Add(new sheetHeaders("CustID", "Account Reference No.")); // Original text "CustID" will be replaced with "Account Reference No."
 
 ###### result
 
-    >>> MemoryStream results = report.CreateExcelDocument(workbook);  // Download - handle the return results accordingly (return to UI). 
+    MemoryStream results = report.CreateExcelDocument(workbook);  // Download - handle the return results accordingly (return to UI). 
 
 ###### Final code sample (API Content)
 
@@ -83,7 +83,8 @@
 
 ###### UI (Client side code - Javascript example)
 
-    // Client side code required to download the generated file.
+Client side code required to download the generated file.
+
     function exportToExcel(){
 
         var xhr = new XMLHttpRequest();
