@@ -1,0 +1,14 @@
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\bin\Debug\netstandard2.0\ExcelDataDump.deps.json
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\bin\Debug\netstandard2.0\ExcelDataDump.dll
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.csprojAssemblyReference.cache
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.csproj.CoreCompileInputs.cache
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.AssemblyInfoInputs.cache
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.AssemblyInfo.cs
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.Properties.Resources.resources
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.csproj.GenerateResource.cache
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\bin\Debug\netstandard2.0\DocumentFormat.OpenXml.dll
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\bin\Debug\netstandard2.0\DocumentFormat.OpenXml.xml
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.csproj.CopyComplete
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\bin\Debug\netstandard2.0\ExcelDataDump.pdb
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.dll
+C:\Users\VictorD\source\repos\ExcelDataDump\ExcelDataDump\obj\Debug\netstandard2.0\ExcelDataDump.pdb
