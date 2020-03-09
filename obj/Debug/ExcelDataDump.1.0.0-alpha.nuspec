@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ExcelDataDump</id>
+    <version>1.0.0-alpha</version>
+    <authors>Botshelo Diale</authors>
+    <owners>Botshelo Diale</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">License.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <description>Dumps SQL queries or similar structured data (objects) into spreadsheets. Allows custom column names and data may/can be split into multiple sheets.</description>
+    <repository type="git" url="https://github.com/BotsheloDiale/ExcelDataDump.git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="EPPlus" version="4.5.3.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CSharp" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\VictorD\source\ExcelDataDump\bin\Debug\netstandard2.0\ExcelDataDump.dll" target="lib\netstandard2.0\ExcelDataDump.dll" />
+    <file src="C:\Users\VictorD\source\ExcelDataDump\License.txt" target="License.txt" />
+  </files>
+</package>

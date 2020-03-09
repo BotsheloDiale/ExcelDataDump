@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VictorD\\source\\repos\\ExcelDataDump\\ExcelDataDump\\ExcelDataDump.csproj": {}
+    "C:\\Users\\VictorD\\source\\ExcelDataDump\\ExcelDataDump.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VictorD\\source\\repos\\ExcelDataDump\\ExcelDataDump\\ExcelDataDump.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\VictorD\\source\\ExcelDataDump\\ExcelDataDump.csproj": {
+      "version": "1.0.0-beta",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VictorD\\source\\repos\\ExcelDataDump\\ExcelDataDump\\ExcelDataDump.csproj",
+        "projectUniqueName": "C:\\Users\\VictorD\\source\\ExcelDataDump\\ExcelDataDump.csproj",
         "projectName": "ExcelDataDump",
-        "projectPath": "C:\\Users\\VictorD\\source\\repos\\ExcelDataDump\\ExcelDataDump\\ExcelDataDump.csproj",
+        "projectPath": "C:\\Users\\VictorD\\source\\ExcelDataDump\\ExcelDataDump.csproj",
         "packagesPath": "C:\\Users\\VictorD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VictorD\\source\\repos\\ExcelDataDump\\ExcelDataDump\\obj\\",
+        "outputPath": "C:\\Users\\VictorD\\source\\ExcelDataDump\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

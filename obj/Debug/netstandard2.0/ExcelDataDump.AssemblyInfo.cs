@@ -11,10 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Bots")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Botshelo Diale")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Dumps SQL queries or similar formatted data (objects) into spreadsheets. Allows c" +
-    "ustom column names and data may/can be split into multiple sheets.")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Dumps SQL queries or similar structured data (objects) into spreadsheets. Allows " +
+    "custom column names and data may/can be split into multiple sheets.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExcelDataDump")]
