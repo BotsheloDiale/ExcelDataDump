@@ -8,10 +8,9 @@
 
 ## Getting Started
 
-    1. Download free beta package and add reference to the ExcellDataDump.dll in the release folder - .\release\netstandard2.0\ExcellDataDump.dll
+    Download free beta package and add reference to the [ExcellDataDump.dll](.\release\netstandard2.0\ExcellDataDump.dll) in the release folder - .\release\netstandard2.0\
 ##### >>>OR 
-    1. Install https://www.nuget.org/packages/ExcelDataDump/1.0.0-beta 
-    1.1 Add the namespace, "using ExcelDataDump".
+    Install [ExcelDataDumpv1.0.0-beta](https://www.nuget.org/packages/ExcelDataDump/1.0.0-beta) 
 
 ##### Code Sample
 
@@ -25,6 +24,7 @@
 
 >>Defining a single worksheet properties.
 
+    ~~~~
       WorkSheet sheet = new WorkSheet{
         Type = "report",                                         // Keep this as is for future use. when adding other report types.
         Title = "Add title of your report here",                 // Replace with your report title
@@ -35,27 +35,31 @@
         Description = "Report/sheet description",                // Replace with your report description
      };
      workbook.Add(sheet);
+    ~~~~
 
 ###### ** sheet.Headers
 
->>> Headers property is of type List<sheetHeaders> , where sheetHeaders is of type (string, string)
+>>> Headers property is of type <pre>List<sheetHeaders></pre> , where sheetHeaders is of type (string, string)
 >>> sheetHeaders - (column_Key, replacement_name) 
->>>>> "column_key" is the keyname/ table column name from your data set or sql quiry
->>>>> "replacement_name" is the new text value to replace the column_key
+>>>> - "column_key" is the keyname/ table column name from your data set or sql quiry
+>>>> - "replacement_name" is the new text value to replace the column_key
 
 >>> Creating Headers
 >>>     - Replacing two column name with custom,readable and "report friendly" names
-
+~~~
      List<sheetHeaders> headers = new List<sheetHeaders>();            
      headers.Add(new sheetHeaders("CustName", "Customer Name"));       // Original text "CustName" will be replaced with "Customer Name"
      headers.Add(new sheetHeaders("CustID", "Account Reference No.")); // Original text "CustID" will be replaced with "Account Reference No."
-
+~~~
 ###### result
 
+~~~
     MemoryStream results = report.CreateExcelDocument(workbook);  // Download - handle the return results accordingly (return to UI). 
+~~~
 
 ###### Final code sample (API Content)
 
+~~~
         // Instatiate a Workbook and sheets
         ExcelReports report = new ExcelReports();
         List<WorkSheet> workbook = new List<WorkSheet>();
@@ -80,11 +84,13 @@
         // Handle results (return back to UI)
         MemoryStream results = report.CreateExcelDocument(workbook);
         return results;
+~~~
 
 ###### UI (Client side code - Javascript example)
 
 Client side code required to download the generated file.
 
+~~~
     function exportToExcel(){
 
         var xhr = new XMLHttpRequest();
@@ -104,5 +110,6 @@ Client side code required to download the generated file.
         };
         xhr.send(JSON.stringify(self.feedbackData));
     }
+~~~
 
 
