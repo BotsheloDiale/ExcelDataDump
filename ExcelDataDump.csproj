@@ -2,11 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>ExcelDataDump</PackageId>
+    <PackageVersion>1.0.0-alpha</PackageVersion>
     <Authors>Botshelo Diale</Authors>
-    <Company>Bots</Company>
-    <Description>Dumps SQL queries or similar formatted data (objects) into spreadsheets. Allows custom column names and data may/can be split into multiple sheets.</Description>
+    <!--Company>Bots</Company-->
+    <Description>Dumps SQL queries or similar structured data (objects) into spreadsheets. Allows custom column names and data may/can be split into multiple sheets.</Description>
+    
+    <!--Debugging symbols-->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/BotsheloDiale/ExcelDataDump.git</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
   </PropertyGroup>
 
   <ItemGroup>
