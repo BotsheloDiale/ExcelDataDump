@@ -13,9 +13,7 @@
 
 ### Getting Started
 
-Download free beta package and add reference to the [ExcellDataDump.dll](.\release\netstandard2.0\ExcellDataDump.dll) in the release folder - .\release\netstandard2.0\
->>>>>> #### OR 
-Install [ExcelDataDumpv1.0.0-beta](https://www.nuget.org/packages/ExcelDataDump/1.0.0-beta) 
+Install [ExcelDataDumpv1.0.0-beta](https://www.nuget.org/packages/ExcelDataDump/1.0.0-beta) and remember to add the namespace.
 
 
 ##### Code Sample
